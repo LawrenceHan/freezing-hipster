@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A61083BB136ECE2F00D42782 /* CWOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083AF136ECE2F00D42782 /* CWOrderedDictionary.h */; };
+		A61083BC136ECE2F00D42782 /* CWOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083B0136ECE2F00D42782 /* CWOrderedDictionary.m */; };
+		A61083BD136ECE2F00D42782 /* NSArray+CWSortedInsert.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083B1136ECE2F00D42782 /* NSArray+CWSortedInsert.h */; };
+		A61083BE136ECE2F00D42782 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083B2136ECE2F00D42782 /* NSArray+CWSortedInsert.m */; };
+		A61083BF136ECE2F00D42782 /* NSData+CWBase64Encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083B3136ECE2F00D42782 /* NSData+CWBase64Encoding.h */; };
+		A61083C0136ECE2F00D42782 /* NSData+CWBase64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083B4136ECE2F00D42782 /* NSData+CWBase64Encoding.m */; };
+		A61083C1136ECE2F00D42782 /* NSDate+CWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083B5136ECE2F00D42782 /* NSDate+CWAdditions.h */; };
+		A61083C2136ECE2F00D42782 /* NSDate+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083B6136ECE2F00D42782 /* NSDate+CWAdditions.m */; };
+		A61083C3136ECE2F00D42782 /* NSObject+CWAssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083B7136ECE2F00D42782 /* NSObject+CWAssociatedObject.h */; };
+		A61083C4136ECE2F00D42782 /* NSObject+CWAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083B8136ECE2F00D42782 /* NSObject+CWAssociatedObject.m */; };
+		A61083C5136ECE2F00D42782 /* NSString+CWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A61083B9136ECE2F00D42782 /* NSString+CWAdditions.h */; };
+		A61083C6136ECE2F00D42782 /* NSString+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083BA136ECE2F00D42782 /* NSString+CWAdditions.m */; };
+		A61083CF136ECFA100D42782 /* CWOrderedDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083CA136ECFA100D42782 /* CWOrderedDictionaryTest.m */; };
+		A61083D0136ECFA100D42782 /* NSObjectAssociatedObjectsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083CC136ECFA100D42782 /* NSObjectAssociatedObjectsTest.m */; };
+		A61083D1136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61083CE136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.m */; };
+		A61EDF0F142A470400A1DF8C /* CWTranslation.h in Headers */ = {isa = PBXBuildFile; fileRef = A61EDF0A142A470400A1DF8C /* CWTranslation.h */; };
+		A61EDF10142A470400A1DF8C /* CWTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = A61EDF0B142A470400A1DF8C /* CWTranslation.m */; };
+		A61EDF11142A470400A1DF8C /* CWTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = A61EDF0C142A470400A1DF8C /* CWTranslator.h */; };
+		A61EDF12142A470400A1DF8C /* CWTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = A61EDF0D142A470400A1DF8C /* CWTranslator.m */; };
+		A61EDF13142A470400A1DF8C /* CWTranslatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A61EDF0E142A470400A1DF8C /* CWTranslatorPrivate.h */; };
+		A61EDF17142A489700A1DF8C /* CWTranslaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61EDF16142A489700A1DF8C /* CWTranslaterTests.m */; };
+		A6754E6F13EC32A40097D3E9 /* NSObject+CWInvocationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A6754E6D13EC32A40097D3E9 /* NSObject+CWInvocationProxy.h */; };
+		A6754E7013EC32A40097D3E9 /* NSObject+CWInvocationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6754E6E13EC32A40097D3E9 /* NSObject+CWInvocationProxy.m */; };
+		A69185F913E1B289006F25AD /* NSCalendar+CWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A69185F713E1B289006F25AD /* NSCalendar+CWAdditions.h */; };
+		A69185FA13E1B289006F25AD /* NSCalendar+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A69185F813E1B289006F25AD /* NSCalendar+CWAdditions.m */; };
+		A6A9717B1369B26C0065D9BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971751369B2550065D9BE /* SystemConfiguration.framework */; };
+		A6A971A11369B2F40065D9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A6A971A41369B2F40065D9BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971A31369B2F40065D9BE /* UIKit.framework */; };
+		A6A971D31369B3ED0065D9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A971CB1369B3ED0065D9BE /* main.m */; };
+		A6A971D41369B3ED0065D9BE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A971CC1369B3ED0065D9BE /* MainWindow.xib */; };
+		A6A971D51369B3ED0065D9BE /* RSSFeed.translation in Resources */ = {isa = PBXBuildFile; fileRef = A6A971CD1369B3ED0065D9BE /* RSSFeed.translation */; };
+		A6A971D61369B3ED0065D9BE /* RSSFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A971CF1369B3ED0065D9BE /* RSSFeedTableViewController.m */; };
+		A6A971D71369B3ED0065D9BE /* SampleAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A971D11369B3ED0065D9BE /* SampleAppAppDelegate.m */; };
+		A6A971DB1369B4790065D9BE /* libCWFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libCWFoundation.a */; };
+		A6A971DC1369B4790065D9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A6A971DD1369B4790065D9BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971751369B2550065D9BE /* SystemConfiguration.framework */; };
+		A6A971DE1369B4790065D9BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971A31369B2F40065D9BE /* UIKit.framework */; };
+		A6A9758C136AC10A0065D9BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971751369B2550065D9BE /* SystemConfiguration.framework */; };
+		A6B254DD136BF9E700D5F57F /* CWNetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A971701369B20D0065D9BE /* CWNetworkMonitor.h */; };
+		A6B254E7136BF9E700D5F57F /* CWNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A971711369B20D0065D9BE /* CWNetworkMonitor.m */; };
+		A6B254E9136BF9E700D5F57F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A6B254EA136BF9E700D5F57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A971751369B2550065D9BE /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A6B254F1136BFA9F00D5F57F /* libCWNetworkMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B254EE136BF9E700D5F57F /* libCWNetworkMonitor.a */; };
+		A6B254F7136BFD5100D5F57F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B254F2136BFD5100D5F57F /* main.m */; };
+		A6B254F8136BFD5100D5F57F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B254F3136BFD5100D5F57F /* MainWindow.xib */; };
+		A6B254FA136BFD5100D5F57F /* SampleAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B254F6136BFD5100D5F57F /* SampleAppAppDelegate.m */; };
+		A6ED913C13694ABB002DCEE4 /* CWLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913213694ABB002DCEE4 /* CWLocalization.h */; };
+		A6ED913D13694ABB002DCEE4 /* CWLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913313694ABB002DCEE4 /* CWLog.h */; };
+		A6ED913E13694ABB002DCEE4 /* NSError+CWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913413694ABB002DCEE4 /* NSError+CWAdditions.h */; };
+		A6ED913F13694ABB002DCEE4 /* NSError+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED913513694ABB002DCEE4 /* NSError+CWAdditions.m */; };
+		A6ED914013694ABB002DCEE4 /* NSInvocation+CWVariableArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913613694ABB002DCEE4 /* NSInvocation+CWVariableArguments.h */; };
+		A6ED914113694ABB002DCEE4 /* NSInvocation+CWVariableArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED913713694ABB002DCEE4 /* NSInvocation+CWVariableArguments.m */; };
+		A6ED914213694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913813694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.h */; };
+		A6ED914313694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED913913694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.m */; };
+		A6ED914413694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED913A13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.h */; };
+		A6ED914513694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED913B13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.m */; };
+		A6ED914813694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED914613694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.h */; };
+		A6ED915613694AE6002DCEE4 /* libCWFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libCWFoundation.a */; };
+		A6ED915713694AFD002DCEE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A6ED915813694B29002DCEE4 /* NSInvocationVariableArgumentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED914713694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.m */; };
+		A6ED943A13697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED943613697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.h */; };
+		A6ED943B13697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED943713697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.m */; };
+		A6ED943C13697EAE002DCEE4 /* CWFileURLFromDataTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED943813697EAE002DCEE4 /* CWFileURLFromDataTransformer.h */; };
+		A6ED943D13697EAE002DCEE4 /* CWFileURLFromDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED943913697EAE002DCEE4 /* CWFileURLFromDataTransformer.m */; };
+		A6ED94EE13698284002DCEE4 /* CWXMLTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ED94EA13698284002DCEE4 /* CWXMLTranslator.h */; };
+		A6ED94EF13698284002DCEE4 /* CWXMLTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ED94EB13698284002DCEE4 /* CWXMLTranslator.m */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6A971D91369B4010065D9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CWFoundation;
+		};
+		A6B254EF136BFA5D00D5F57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6B254D0136BF9E700D5F57F;
+			remoteInfo = CWNetworkMonitor;
+		};
+		A6ED915413694AE0002DCEE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CWFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A61083AF136ECE2F00D42782 /* CWOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWOrderedDictionary.h; path = Classes/CWOrderedDictionary.h; sourceTree = "<group>"; };
+		A61083B0136ECE2F00D42782 /* CWOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = CWOrderedDictionary.m; path = Classes/CWOrderedDictionary.m; sourceTree = "<group>"; };
+		A61083B1136ECE2F00D42782 /* NSArray+CWSortedInsert.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSArray+CWSortedInsert.h"; path = "Classes/NSArray+CWSortedInsert.h"; sourceTree = "<group>"; };
+		A61083B2136ECE2F00D42782 /* NSArray+CWSortedInsert.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CWSortedInsert.m"; path = "Classes/NSArray+CWSortedInsert.m"; sourceTree = "<group>"; };
+		A61083B3136ECE2F00D42782 /* NSData+CWBase64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSData+CWBase64Encoding.h"; path = "Classes/NSData+CWBase64Encoding.h"; sourceTree = "<group>"; };
+		A61083B4136ECE2F00D42782 /* NSData+CWBase64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSData+CWBase64Encoding.m"; path = "Classes/NSData+CWBase64Encoding.m"; sourceTree = "<group>"; };
+		A61083B5136ECE2F00D42782 /* NSDate+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSDate+CWAdditions.h"; path = "Classes/NSDate+CWAdditions.h"; sourceTree = "<group>"; };
+		A61083B6136ECE2F00D42782 /* NSDate+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CWAdditions.m"; path = "Classes/NSDate+CWAdditions.m"; sourceTree = "<group>"; };
+		A61083B7136ECE2F00D42782 /* NSObject+CWAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSObject+CWAssociatedObject.h"; path = "Classes/NSObject+CWAssociatedObject.h"; sourceTree = "<group>"; };
+		A61083B8136ECE2F00D42782 /* NSObject+CWAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CWAssociatedObject.m"; path = "Classes/NSObject+CWAssociatedObject.m"; sourceTree = "<group>"; };
+		A61083B9136ECE2F00D42782 /* NSString+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSString+CWAdditions.h"; path = "Classes/NSString+CWAdditions.h"; sourceTree = "<group>"; };
+		A61083BA136ECE2F00D42782 /* NSString+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSString+CWAdditions.m"; path = "Classes/NSString+CWAdditions.m"; sourceTree = "<group>"; };
+		A61083C9136ECFA100D42782 /* CWOrderedDictionaryTest.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWOrderedDictionaryTest.h; path = "Test Classes/CWOrderedDictionaryTest.h"; sourceTree = "<group>"; };
+		A61083CA136ECFA100D42782 /* CWOrderedDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = CWOrderedDictionaryTest.m; path = "Test Classes/CWOrderedDictionaryTest.m"; sourceTree = "<group>"; };
+		A61083CB136ECFA100D42782 /* NSObjectAssociatedObjectsTest.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = NSObjectAssociatedObjectsTest.h; path = "Test Classes/NSObjectAssociatedObjectsTest.h"; sourceTree = "<group>"; };
+		A61083CC136ECFA100D42782 /* NSObjectAssociatedObjectsTest.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = NSObjectAssociatedObjectsTest.m; path = "Test Classes/NSObjectAssociatedObjectsTest.m"; sourceTree = "<group>"; };
+		A61083CD136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = NSStringCWPrefixAndSuffixTests.h; path = "Test Classes/NSStringCWPrefixAndSuffixTests.h"; sourceTree = "<group>"; };
+		A61083CE136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = NSStringCWPrefixAndSuffixTests.m; path = "Test Classes/NSStringCWPrefixAndSuffixTests.m"; sourceTree = "<group>"; };
+		A61EDF0A142A470400A1DF8C /* CWTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTranslation.h; path = Classes/CWTranslation.h; sourceTree = "<group>"; };
+		A61EDF0B142A470400A1DF8C /* CWTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWTranslation.m; path = Classes/CWTranslation.m; sourceTree = "<group>"; };
+		A61EDF0C142A470400A1DF8C /* CWTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTranslator.h; path = Classes/CWTranslator.h; sourceTree = "<group>"; };
+		A61EDF0D142A470400A1DF8C /* CWTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWTranslator.m; path = Classes/CWTranslator.m; sourceTree = "<group>"; };
+		A61EDF0E142A470400A1DF8C /* CWTranslatorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTranslatorPrivate.h; path = Classes/CWTranslatorPrivate.h; sourceTree = "<group>"; };
+		A61EDF15142A489700A1DF8C /* CWTranslaterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTranslaterTests.h; path = "Test Classes/CWTranslaterTests.h"; sourceTree = "<group>"; };
+		A61EDF16142A489700A1DF8C /* CWTranslaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWTranslaterTests.m; path = "Test Classes/CWTranslaterTests.m"; sourceTree = "<group>"; };
+		A6754E6D13EC32A40097D3E9 /* NSObject+CWInvocationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+CWInvocationProxy.h"; path = "Classes/NSObject+CWInvocationProxy.h"; sourceTree = "<group>"; };
+		A6754E6E13EC32A40097D3E9 /* NSObject+CWInvocationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CWInvocationProxy.m"; path = "Classes/NSObject+CWInvocationProxy.m"; sourceTree = "<group>"; };
+		A69185F713E1B289006F25AD /* NSCalendar+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+CWAdditions.h"; path = "Classes/NSCalendar+CWAdditions.h"; sourceTree = "<group>"; };
+		A69185F813E1B289006F25AD /* NSCalendar+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+CWAdditions.m"; path = "Classes/NSCalendar+CWAdditions.m"; sourceTree = "<group>"; };
+		A6A971701369B20D0065D9BE /* CWNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWNetworkMonitor.h; path = Classes/CWNetworkMonitor.h; sourceTree = "<group>"; };
+		A6A971711369B20D0065D9BE /* CWNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = CWNetworkMonitor.m; path = Classes/CWNetworkMonitor.m; sourceTree = "<group>"; };
+		A6A971751369B2550065D9BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A6A971981369B2D80065D9BE /* NetworkMonitorSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkMonitorSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A971A31369B2F40065D9BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6A971C41369B3C90065D9BE /* XMLTranslatorSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLTranslatorSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A971CB1369B3ED0065D9BE /* main.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6A971CC1369B3ED0065D9BE /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		A6A971CD1369B3ED0065D9BE /* RSSFeed.translation */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = RSSFeed.translation; sourceTree = "<group>"; };
+		A6A971CE1369B3ED0065D9BE /* RSSFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = RSSFeedTableViewController.h; sourceTree = "<group>"; };
+		A6A971CF1369B3ED0065D9BE /* RSSFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTableViewController.m; sourceTree = "<group>"; };
+		A6A971D01369B3ED0065D9BE /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = SampleAppAppDelegate.h; sourceTree = "<group>"; };
+		A6A971D11369B3ED0065D9BE /* SampleAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = SampleAppAppDelegate.m; sourceTree = "<group>"; };
+		A6A971D21369B3ED0065D9BE /* XMLTranslatorSampleApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.plist.xml; path = "XMLTranslatorSampleApp-Info.plist"; sourceTree = "<group>"; };
+		A6A9754B136ABD770065D9BE /* CWFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWFoundation.h; path = Classes/CWFoundation.h; sourceTree = "<group>"; };
+		A6B254EE136BF9E700D5F57F /* libCWNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCWNetworkMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B254F2136BFD5100D5F57F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Sample Classes/NetworkMonitor/main.m"; sourceTree = SOURCE_ROOT; };
+		A6B254F3136BFD5100D5F57F /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "Sample Classes/NetworkMonitor/MainWindow.xib"; sourceTree = SOURCE_ROOT; };
+		A6B254F4136BFD5100D5F57F /* NetworkMonitorSampleApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NetworkMonitorSampleApp-Info.plist"; path = "Sample Classes/NetworkMonitor/NetworkMonitorSampleApp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A6B254F5136BFD5100D5F57F /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleAppAppDelegate.h; path = "Sample Classes/NetworkMonitor/SampleAppAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		A6B254F6136BFD5100D5F57F /* SampleAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleAppAppDelegate.m; path = "Sample Classes/NetworkMonitor/SampleAppAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		A6B5CF561382ACFF00D806A8 /* README-Translator */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-Translator"; sourceTree = "<group>"; };
+		A6ED906F1369473E002DCEE4 /* README */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A6ED913213694ABB002DCEE4 /* CWLocalization.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWLocalization.h; path = Classes/CWLocalization.h; sourceTree = "<group>"; };
+		A6ED913313694ABB002DCEE4 /* CWLog.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWLog.h; path = Classes/CWLog.h; sourceTree = "<group>"; };
+		A6ED913413694ABB002DCEE4 /* NSError+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSError+CWAdditions.h"; path = "Classes/NSError+CWAdditions.h"; sourceTree = "<group>"; };
+		A6ED913513694ABB002DCEE4 /* NSError+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSError+CWAdditions.m"; path = "Classes/NSError+CWAdditions.m"; sourceTree = "<group>"; };
+		A6ED913613694ABB002DCEE4 /* NSInvocation+CWVariableArguments.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+CWVariableArguments.h"; path = "Classes/NSInvocation+CWVariableArguments.h"; sourceTree = "<group>"; };
+		A6ED913713694ABB002DCEE4 /* NSInvocation+CWVariableArguments.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+CWVariableArguments.m"; path = "Classes/NSInvocation+CWVariableArguments.m"; sourceTree = "<group>"; };
+		A6ED913813694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSOperationQueue+CWDefaultQueue.h"; path = "Classes/NSOperationQueue+CWDefaultQueue.h"; sourceTree = "<group>"; };
+		A6ED913913694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSOperationQueue+CWDefaultQueue.m"; path = "Classes/NSOperationQueue+CWDefaultQueue.m"; sourceTree = "<group>"; };
+		A6ED913A13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSOperationQueue+CWReplaceOperation.h"; path = "Classes/NSOperationQueue+CWReplaceOperation.h"; sourceTree = "<group>"; };
+		A6ED913B13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSOperationQueue+CWReplaceOperation.m"; path = "Classes/NSOperationQueue+CWReplaceOperation.m"; sourceTree = "<group>"; };
+		A6ED914613694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = NSInvocationVariableArgumentsTest.h; path = "Test Classes/NSInvocationVariableArgumentsTest.h"; sourceTree = "<group>"; };
+		A6ED914713694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = NSInvocationVariableArgumentsTest.m; path = "Test Classes/NSInvocationVariableArgumentsTest.m"; sourceTree = "<group>"; };
+		A6ED914F13694AD8002DCEE4 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ED915013694AD8002DCEE4 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		A6ED943613697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSURLLoadingSystem+CWAdditions.h"; path = "Classes/NSURLLoadingSystem+CWAdditions.h"; sourceTree = "<group>"; };
+		A6ED943713697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSURLLoadingSystem+CWAdditions.m"; path = "Classes/NSURLLoadingSystem+CWAdditions.m"; sourceTree = "<group>"; };
+		A6ED943813697EAE002DCEE4 /* CWFileURLFromDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWFileURLFromDataTransformer.h; path = Classes/CWFileURLFromDataTransformer.h; sourceTree = "<group>"; };
+		A6ED943913697EAE002DCEE4 /* CWFileURLFromDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = CWFileURLFromDataTransformer.m; path = Classes/CWFileURLFromDataTransformer.m; sourceTree = "<group>"; };
+		A6ED94EA13698284002DCEE4 /* CWXMLTranslator.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWXMLTranslator.h; path = Classes/CWXMLTranslator.h; sourceTree = "<group>"; };
+		A6ED94EB13698284002DCEE4 /* CWXMLTranslator.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = CWXMLTranslator.m; path = Classes/CWXMLTranslator.m; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCWFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCWFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6A971961369B2D80065D9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254F1136BFA9F00D5F57F /* libCWNetworkMonitor.a in Frameworks */,
+				A6A971A11369B2F40065D9BE /* Foundation.framework in Frameworks */,
+				A6A971A41369B2F40065D9BE /* UIKit.framework in Frameworks */,
+				A6A9758C136AC10A0065D9BE /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A971C21369B3C90065D9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A971DB1369B4790065D9BE /* libCWFoundation.a in Frameworks */,
+				A6A971DC1369B4790065D9BE /* Foundation.framework in Frameworks */,
+				A6A971DD1369B4790065D9BE /* SystemConfiguration.framework in Frameworks */,
+				A6A971DE1369B4790065D9BE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B254E8136BF9E700D5F57F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254E9136BF9E700D5F57F /* Foundation.framework in Frameworks */,
+				A6B254EA136BF9E700D5F57F /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ED914C13694AD8002DCEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ED915613694AE6002DCEE4 /* libCWFoundation.a in Frameworks */,
+				A6ED915713694AFD002DCEE4 /* Foundation.framework in Frameworks */,
+				A6A9717B1369B26C0065D9BE /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCWFoundation.a */,
+				A6ED914F13694AD8002DCEE4 /* UnitTests.octest */,
+				A6A971981369B2D80065D9BE /* NetworkMonitorSampleApp.app */,
+				A6A971C41369B3C90065D9BE /* XMLTranslatorSampleApp.app */,
+				A6B254EE136BF9E700D5F57F /* libCWNetworkMonitor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CWFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A6ED906F1369473E002DCEE4 /* README */,
+				A6B5CF561382ACFF00D806A8 /* README-Translator */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				A63D5B021339E86A005D6725 /* Test Classes */,
+				A63D5B031339E874005D6725 /* Sample Classes */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CWFoundation;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				A6A971751369B2550065D9BE /* SystemConfiguration.framework */,
+				A6A971A31369B2F40065D9BE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9754B136ABD770065D9BE /* CWFoundation.h */,
+				A6ED943813697EAE002DCEE4 /* CWFileURLFromDataTransformer.h */,
+				A6ED943913697EAE002DCEE4 /* CWFileURLFromDataTransformer.m */,
+				A6ED913213694ABB002DCEE4 /* CWLocalization.h */,
+				A6ED913313694ABB002DCEE4 /* CWLog.h */,
+				A6A971701369B20D0065D9BE /* CWNetworkMonitor.h */,
+				A6A971711369B20D0065D9BE /* CWNetworkMonitor.m */,
+				A61083AF136ECE2F00D42782 /* CWOrderedDictionary.h */,
+				A61083B0136ECE2F00D42782 /* CWOrderedDictionary.m */,
+				A61EDF0A142A470400A1DF8C /* CWTranslation.h */,
+				A61EDF0B142A470400A1DF8C /* CWTranslation.m */,
+				A61EDF0C142A470400A1DF8C /* CWTranslator.h */,
+				A61EDF0D142A470400A1DF8C /* CWTranslator.m */,
+				A61EDF0E142A470400A1DF8C /* CWTranslatorPrivate.h */,
+				A6ED94EA13698284002DCEE4 /* CWXMLTranslator.h */,
+				A6ED94EB13698284002DCEE4 /* CWXMLTranslator.m */,
+				A61083B1136ECE2F00D42782 /* NSArray+CWSortedInsert.h */,
+				A61083B2136ECE2F00D42782 /* NSArray+CWSortedInsert.m */,
+				A69185F713E1B289006F25AD /* NSCalendar+CWAdditions.h */,
+				A69185F813E1B289006F25AD /* NSCalendar+CWAdditions.m */,
+				A61083B3136ECE2F00D42782 /* NSData+CWBase64Encoding.h */,
+				A61083B4136ECE2F00D42782 /* NSData+CWBase64Encoding.m */,
+				A61083B5136ECE2F00D42782 /* NSDate+CWAdditions.h */,
+				A61083B6136ECE2F00D42782 /* NSDate+CWAdditions.m */,
+				A6ED913413694ABB002DCEE4 /* NSError+CWAdditions.h */,
+				A6ED913513694ABB002DCEE4 /* NSError+CWAdditions.m */,
+				A6ED913613694ABB002DCEE4 /* NSInvocation+CWVariableArguments.h */,
+				A6ED913713694ABB002DCEE4 /* NSInvocation+CWVariableArguments.m */,
+				A61083B7136ECE2F00D42782 /* NSObject+CWAssociatedObject.h */,
+				A61083B8136ECE2F00D42782 /* NSObject+CWAssociatedObject.m */,
+				A6754E6D13EC32A40097D3E9 /* NSObject+CWInvocationProxy.h */,
+				A6754E6E13EC32A40097D3E9 /* NSObject+CWInvocationProxy.m */,
+				A6ED913813694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.h */,
+				A6ED913913694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.m */,
+				A6ED913A13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.h */,
+				A6ED913B13694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.m */,
+				A61083B9136ECE2F00D42782 /* NSString+CWAdditions.h */,
+				A61083BA136ECE2F00D42782 /* NSString+CWAdditions.m */,
+				A6ED943613697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.h */,
+				A6ED943713697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A63D5B021339E86A005D6725 /* Test Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A61083C9136ECFA100D42782 /* CWOrderedDictionaryTest.h */,
+				A61083CA136ECFA100D42782 /* CWOrderedDictionaryTest.m */,
+				A61EDF15142A489700A1DF8C /* CWTranslaterTests.h */,
+				A61EDF16142A489700A1DF8C /* CWTranslaterTests.m */,
+				A6ED914613694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.h */,
+				A6ED914713694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.m */,
+				A61083CB136ECFA100D42782 /* NSObjectAssociatedObjectsTest.h */,
+				A61083CC136ECFA100D42782 /* NSObjectAssociatedObjectsTest.m */,
+				A61083CD136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.h */,
+				A61083CE136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.m */,
+				A6ED915013694AD8002DCEE4 /* UnitTests-Info.plist */,
+			);
+			name = "Test Classes";
+			sourceTree = "<group>";
+		};
+		A63D5B031339E874005D6725 /* Sample Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6A971A51369B30C0065D9BE /* NetworkMonitor */,
+				A6A971CA1369B3ED0065D9BE /* XMLTranslator */,
+			);
+			name = "Sample Classes";
+			sourceTree = "<group>";
+		};
+		A6A971A51369B30C0065D9BE /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A6B254F2136BFD5100D5F57F /* main.m */,
+				A6B254F3136BFD5100D5F57F /* MainWindow.xib */,
+				A6B254F4136BFD5100D5F57F /* NetworkMonitorSampleApp-Info.plist */,
+				A6B254F5136BFD5100D5F57F /* SampleAppAppDelegate.h */,
+				A6B254F6136BFD5100D5F57F /* SampleAppAppDelegate.m */,
+			);
+			name = NetworkMonitor;
+			path = "Sample Classes/NetworkMonitor";
+			sourceTree = "<group>";
+		};
+		A6A971CA1369B3ED0065D9BE /* XMLTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				A6A971CB1369B3ED0065D9BE /* main.m */,
+				A6A971CE1369B3ED0065D9BE /* RSSFeedTableViewController.h */,
+				A6A971CF1369B3ED0065D9BE /* RSSFeedTableViewController.m */,
+				A6A971D01369B3ED0065D9BE /* SampleAppAppDelegate.h */,
+				A6A971D11369B3ED0065D9BE /* SampleAppAppDelegate.m */,
+				A6A971CD1369B3ED0065D9BE /* RSSFeed.translation */,
+				A6A971CC1369B3ED0065D9BE /* MainWindow.xib */,
+				A6A971D21369B3ED0065D9BE /* XMLTranslatorSampleApp-Info.plist */,
+			);
+			name = XMLTranslator;
+			path = "Sample Classes/XMLTranslator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A6B254D1136BF9E700D5F57F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254DD136BF9E700D5F57F /* CWNetworkMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ED913C13694ABB002DCEE4 /* CWLocalization.h in Headers */,
+				A6ED913D13694ABB002DCEE4 /* CWLog.h in Headers */,
+				A6ED913E13694ABB002DCEE4 /* NSError+CWAdditions.h in Headers */,
+				A6ED914013694ABB002DCEE4 /* NSInvocation+CWVariableArguments.h in Headers */,
+				A6ED914213694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.h in Headers */,
+				A6ED914413694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.h in Headers */,
+				A6ED914813694AC9002DCEE4 /* NSInvocationVariableArgumentsTest.h in Headers */,
+				A6ED943A13697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.h in Headers */,
+				A6ED943C13697EAE002DCEE4 /* CWFileURLFromDataTransformer.h in Headers */,
+				A6ED94EE13698284002DCEE4 /* CWXMLTranslator.h in Headers */,
+				A61083BB136ECE2F00D42782 /* CWOrderedDictionary.h in Headers */,
+				A61083BD136ECE2F00D42782 /* NSArray+CWSortedInsert.h in Headers */,
+				A61083BF136ECE2F00D42782 /* NSData+CWBase64Encoding.h in Headers */,
+				A61083C1136ECE2F00D42782 /* NSDate+CWAdditions.h in Headers */,
+				A61083C3136ECE2F00D42782 /* NSObject+CWAssociatedObject.h in Headers */,
+				A61083C5136ECE2F00D42782 /* NSString+CWAdditions.h in Headers */,
+				A69185F913E1B289006F25AD /* NSCalendar+CWAdditions.h in Headers */,
+				A6754E6F13EC32A40097D3E9 /* NSObject+CWInvocationProxy.h in Headers */,
+				A61EDF0F142A470400A1DF8C /* CWTranslation.h in Headers */,
+				A61EDF11142A470400A1DF8C /* CWTranslator.h in Headers */,
+				A61EDF13142A470400A1DF8C /* CWTranslatorPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A6A971971369B2D80065D9BE /* NetworkMonitorSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A9719D1369B2D90065D9BE /* Build configuration list for PBXNativeTarget "NetworkMonitorSampleApp" */;
+			buildPhases = (
+				A6A971941369B2D80065D9BE /* Resources */,
+				A6A971951369B2D80065D9BE /* Sources */,
+				A6A971961369B2D80065D9BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6B254F0136BFA5D00D5F57F /* PBXTargetDependency */,
+			);
+			name = NetworkMonitorSampleApp;
+			productName = NetworkMonitorSampleApp;
+			productReference = A6A971981369B2D80065D9BE /* NetworkMonitorSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6A971C31369B3C90065D9BE /* XMLTranslatorSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A971C91369B3CA0065D9BE /* Build configuration list for PBXNativeTarget "XMLTranslatorSampleApp" */;
+			buildPhases = (
+				A6A971C01369B3C90065D9BE /* Resources */,
+				A6A971C11369B3C90065D9BE /* Sources */,
+				A6A971C21369B3C90065D9BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A971DA1369B4010065D9BE /* PBXTargetDependency */,
+			);
+			name = XMLTranslatorSampleApp;
+			productName = XMLTranslatorSampleApp;
+			productReference = A6A971C41369B3C90065D9BE /* XMLTranslatorSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6B254D0136BF9E700D5F57F /* CWNetworkMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B254EB136BF9E700D5F57F /* Build configuration list for PBXNativeTarget "CWNetworkMonitor" */;
+			buildPhases = (
+				A6B254D1136BF9E700D5F57F /* Headers */,
+				A6B254DE136BF9E700D5F57F /* Sources */,
+				A6B254E8136BF9E700D5F57F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CWNetworkMonitor;
+			productName = CWFoundation;
+			productReference = A6B254EE136BF9E700D5F57F /* libCWNetworkMonitor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A6ED914E13694AD8002DCEE4 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ED915313694AD8002DCEE4 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				A6ED914A13694AD8002DCEE4 /* Resources */,
+				A6ED914B13694AD8002DCEE4 /* Sources */,
+				A6ED914C13694AD8002DCEE4 /* Frameworks */,
+				A6ED914D13694AD8002DCEE4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6ED915513694AE0002DCEE4 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = A6ED914F13694AD8002DCEE4 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* CWFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CWFoundation" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CWFoundation;
+			productName = CWFoundation;
+			productReference = D2AAC07E0554694100DB518D /* libCWFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CWFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* CWFoundation */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CWFoundation */,
+				A6B254D0136BF9E700D5F57F /* CWNetworkMonitor */,
+				A6ED914E13694AD8002DCEE4 /* UnitTests */,
+				A6A971971369B2D80065D9BE /* NetworkMonitorSampleApp */,
+				A6A971C31369B3C90065D9BE /* XMLTranslatorSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6A971941369B2D80065D9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254F8136BFD5100D5F57F /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A971C01369B3C90065D9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A971D41369B3ED0065D9BE /* MainWindow.xib in Resources */,
+				A6A971D51369B3ED0065D9BE /* RSSFeed.translation in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ED914A13694AD8002DCEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6ED914D13694AD8002DCEE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6A971951369B2D80065D9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254F7136BFD5100D5F57F /* main.m in Sources */,
+				A6B254FA136BFD5100D5F57F /* SampleAppAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A971C11369B3C90065D9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A971D31369B3ED0065D9BE /* main.m in Sources */,
+				A6A971D61369B3ED0065D9BE /* RSSFeedTableViewController.m in Sources */,
+				A6A971D71369B3ED0065D9BE /* SampleAppAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B254DE136BF9E700D5F57F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B254E7136BF9E700D5F57F /* CWNetworkMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ED914B13694AD8002DCEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ED915813694B29002DCEE4 /* NSInvocationVariableArgumentsTest.m in Sources */,
+				A61083CF136ECFA100D42782 /* CWOrderedDictionaryTest.m in Sources */,
+				A61083D0136ECFA100D42782 /* NSObjectAssociatedObjectsTest.m in Sources */,
+				A61083D1136ECFA100D42782 /* NSStringCWPrefixAndSuffixTests.m in Sources */,
+				A61EDF17142A489700A1DF8C /* CWTranslaterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ED913F13694ABB002DCEE4 /* NSError+CWAdditions.m in Sources */,
+				A6ED914113694ABB002DCEE4 /* NSInvocation+CWVariableArguments.m in Sources */,
+				A6ED914313694ABB002DCEE4 /* NSOperationQueue+CWDefaultQueue.m in Sources */,
+				A6ED914513694ABB002DCEE4 /* NSOperationQueue+CWReplaceOperation.m in Sources */,
+				A6ED943B13697EAE002DCEE4 /* NSURLLoadingSystem+CWAdditions.m in Sources */,
+				A6ED943D13697EAE002DCEE4 /* CWFileURLFromDataTransformer.m in Sources */,
+				A6ED94EF13698284002DCEE4 /* CWXMLTranslator.m in Sources */,
+				A61083BC136ECE2F00D42782 /* CWOrderedDictionary.m in Sources */,
+				A61083BE136ECE2F00D42782 /* NSArray+CWSortedInsert.m in Sources */,
+				A61083C0136ECE2F00D42782 /* NSData+CWBase64Encoding.m in Sources */,
+				A61083C2136ECE2F00D42782 /* NSDate+CWAdditions.m in Sources */,
+				A61083C4136ECE2F00D42782 /* NSObject+CWAssociatedObject.m in Sources */,
+				A61083C6136ECE2F00D42782 /* NSString+CWAdditions.m in Sources */,
+				A69185FA13E1B289006F25AD /* NSCalendar+CWAdditions.m in Sources */,
+				A6754E7013EC32A40097D3E9 /* NSObject+CWInvocationProxy.m in Sources */,
+				A61EDF10142A470400A1DF8C /* CWTranslation.m in Sources */,
+				A61EDF12142A470400A1DF8C /* CWTranslator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6A971DA1369B4010065D9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* CWFoundation */;
+			targetProxy = A6A971D91369B4010065D9BE /* PBXContainerItemProxy */;
+		};
+		A6B254F0136BFA5D00D5F57F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6B254D0136BF9E700D5F57F /* CWNetworkMonitor */;
+			targetProxy = A6B254EF136BFA5D00D5F57F /* PBXContainerItemProxy */;
+		};
+		A6ED915513694AE0002DCEE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* CWFoundation */;
+			targetProxy = A6ED915413694AE0002DCEE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CWFoundation.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CWFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				DSTROOT = /tmp/CWFoundation.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CWFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A6A9719B1369B2D90065D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sample Classes/NetworkMonitor/NetworkMonitorSampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = NetworkMonitorSampleApp;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6A9719C1369B2D90065D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sample Classes/NetworkMonitor/NetworkMonitorSampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = NetworkMonitorSampleApp;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A6A971C71369B3CA0065D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sample Classes/XMLTranslator/XMLTranslatorSampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = XMLTranslatorSampleApp;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6A971C81369B3CA0065D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sample Classes/XMLTranslator/XMLTranslatorSampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = XMLTranslatorSampleApp;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A6B254EC136BF9E700D5F57F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CWFoundation.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CWNetworkMonitor;
+				SKIP_INSTALL = YES;
+				VERSION_INFO_BUILDER = CWNetworkMonitor;
+			};
+			name = Debug;
+		};
+		A6B254ED136BF9E700D5F57F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				DSTROOT = /tmp/CWFoundation.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CWNetworkMonitor;
+				SKIP_INSTALL = YES;
+				VERSION_INFO_BUILDER = CWNetworkMonitor;
+			};
+			name = Release;
+		};
+		A6ED915113694AD8002DCEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A6ED915213694AD8002DCEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CWFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CWFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A9719D1369B2D90065D9BE /* Build configuration list for PBXNativeTarget "NetworkMonitorSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9719B1369B2D90065D9BE /* Debug */,
+				A6A9719C1369B2D90065D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A971C91369B3CA0065D9BE /* Build configuration list for PBXNativeTarget "XMLTranslatorSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A971C71369B3CA0065D9BE /* Debug */,
+				A6A971C81369B3CA0065D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B254EB136BF9E700D5F57F /* Build configuration list for PBXNativeTarget "CWNetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B254EC136BF9E700D5F57F /* Debug */,
+				A6B254ED136BF9E700D5F57F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ED915313694AD8002DCEE4 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ED915113694AD8002DCEE4 /* Debug */,
+				A6ED915213694AD8002DCEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
