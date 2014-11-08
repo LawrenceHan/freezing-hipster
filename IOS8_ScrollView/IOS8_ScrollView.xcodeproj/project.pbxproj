@@ -14,6 +14,7 @@
 		0285A20D19D8F33B007A10A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0285A20C19D8F33B007A10A7 /* Images.xcassets */; };
 		0285A21019D8F33B007A10A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0285A20E19D8F33B007A10A7 /* LaunchScreen.xib */; };
 		0285A21C19D8F33B007A10A7 /* IOS8_ScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0285A21B19D8F33B007A10A7 /* IOS8_ScrollViewTests.m */; };
+		0285A23919D93C8E007A10A7 /* OverlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0285A23819D93C8E007A10A7 /* OverlayScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		0285A21519D8F33B007A10A7 /* IOS8_ScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS8_ScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0285A21A19D8F33B007A10A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0285A21B19D8F33B007A10A7 /* IOS8_ScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS8_ScrollViewTests.m; sourceTree = "<group>"; };
+		0285A23719D93C8E007A10A7 /* OverlayScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayScrollView.h; sourceTree = "<group>"; };
+		0285A23819D93C8E007A10A7 /* OverlayScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				0285A20C19D8F33B007A10A7 /* Images.xcassets */,
 				0285A20E19D8F33B007A10A7 /* LaunchScreen.xib */,
 				0285A1FF19D8F33B007A10A7 /* Supporting Files */,
+				0285A23719D93C8E007A10A7 /* OverlayScrollView.h */,
+				0285A23819D93C8E007A10A7 /* OverlayScrollView.m */,
 			);
 			path = IOS8_ScrollView;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				0285A20819D8F33B007A10A7 /* ViewController.m in Sources */,
 				0285A20519D8F33B007A10A7 /* AppDelegate.m in Sources */,
+				0285A23919D93C8E007A10A7 /* OverlayScrollView.m in Sources */,
 				0285A20219D8F33B007A10A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
